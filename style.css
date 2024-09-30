@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+  font-family: Arial, sans-serif; /* Set a default font */
+}
+
+.fan-container {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fan {
+  width: 100%;
+  height: auto;
+  animation: rotate 4s linear infinite; /* Initial rotation speed */
+}
+
+.styled-button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  background-color: #007bff; /* Button background color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.styled-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly grow button on hover */
+}
+
+.progress-bar-container {
+  width: 250px; /* Match the width of the fan */
+  height: 20px;
+  background-color: #e0e0e0; /* Light grey background for the progress bar */
+  border-radius: 10px;
+  overflow: hidden; /* To round the corners */
+  margin-top: 15px; /* Space between the button and the progress bar */
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50; /* Green color for the progress */
+  width: 0%; /* Start with 0% width */
+  transition: width 0.5s; /* Smooth transition for the width change */
+}
+
+.responsive-video {
+  width: 100%; /* Make video responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: none; /* Hide video initially */
+}
+h1{
+  text-align: center;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

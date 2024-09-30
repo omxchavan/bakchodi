@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fan Rotation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Pankhe Wale Baba</h1>
+  <div class="fan-container mb-4">
+    <img src="fan.png" alt="Fan" class="fan" id="fanImage">
+  </div>
+  
+  <button id="speedButton" class="styled-button">Increase Speed</button>
+  
+  <!-- Progress Bar -->
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <!-- Video to be played -->
+  <video id="fanVideo" class="responsive-video" style="display:none;">
+    <source src="pankhe.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <script src="script.js"></script>
+  <h4>Made by Om Chavan</h4>
+</body>
+</html>
